@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.photo_grid {
-  float: left;
-  padding: .5rem;
+// This is for the images that are on the index.html.erb page and how they are spaced apart
+#photo_grid {
+  margin: .5rem;
 }

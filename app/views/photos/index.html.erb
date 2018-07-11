@@ -28,17 +28,22 @@
       <% end %>
     </tbody>
   </table> -->
+  <section>
+  <div class="container">
+    <div class="row">
+      <% @photos.each do |photo| %>
 
-    <% @photos.each do |photo| %>
-      <div class="row align-items-start">
-        <div class="col-md-4 photo_grid">
-          <%= image_tag photo.image.variant(resize: "400x400") %>
-        </div>
-      </div>
-    <% end %>
+        <%= image_tag photo.image.variant(resize: "300x300"), :id => "photo_grid" %>
+
+      <% end %>
+    </div>
+  </div>
+  </section>
 
   <br>
 
   <%= link_to 'New Photo', new_photo_path %>
+
+
 
 </div>
