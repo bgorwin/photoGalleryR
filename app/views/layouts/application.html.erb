@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>PhotoGalleryR</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,9 +14,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top-py-4">
       <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <h3 class="d-inline align-middle">Author</h3>
-        </a>
+        <a class="navbar-brand" <%= link_to "PGBG", '/#index' %></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collpse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -32,9 +31,11 @@
         </div>
       </div>
     </nav>
-  <div class="container">
+
+
     <%= yield %>
-  </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   </body>
 
       <div class="footer navbar-fixed-bottom footer-copyright text-center py-4 bg-secondary">© 2018 Copyright: Brent Gorwin</div>

@@ -29,10 +29,22 @@ gem 'jbuilder', '~> 2.5'
 
 
 
+
+
+
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem "aws-sdk-s3", require: false
 gem 'mini_magick'
+gem 'activeadmin'
+gem 'devise'
+
+
+
+
+
+
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
