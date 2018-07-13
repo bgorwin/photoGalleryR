@@ -1,9 +1,9 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <div class="jumbotron">
-  <h1>Photo Gallery By Brent G</h1>
-  </div>
+  <section class="py-5 ">
+    <h1 class="display-4 text-center">Photo Gallery By Brent G</h1>
+  </section>
   <!--
   <table class="table">
     <thead>
@@ -29,21 +29,23 @@
     </tbody>
   </table> -->
   <section>
-  <div class="container">
-    <div class="row">
-      <% @photos.each do |photo| %>
+    <div>
+      <div class="row" id="image_container">
+        <% @photos.each do |photo| %>
 
-        <%= image_tag photo.image.variant(resize: "300x300"), :id => "photo_grid" %>
+          <%= image_tag photo.image.variant(resize: "300x300"), :id => "photo_grid" %>
 
-      <% end %>
+        <% end %>
+      </div>
     </div>
-  </div>
   </section>
 
   <br>
+  <section class="py-5">
 
-  <%= link_to 'New Photo', new_photo_path %>
+      <%= link_to 'New Photo', new_photo_path, :class => "btn btn-outline-primary" %>
 
+  </section>
 
 
 </div>
