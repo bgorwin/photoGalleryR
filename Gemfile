@@ -38,6 +38,7 @@ gem "aws-sdk-s3", require: false
 gem 'mini_magick'
 gem 'activeadmin'
 gem 'devise'
+gem "font-awesome-rails"
 
 
 

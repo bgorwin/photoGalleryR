@@ -1,3 +1,29 @@
 // Place all the styles related to the Contact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#contactBackgroundImg {
+    /* The image used */
+    background-image: url("parallaxB.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+}
+
+// Padding for the "Contact Me" text
+#contact_top {
+  padding-top: 10%;
+  color: white;
+}
+
+#parallaxContact {
+  padding-top: 17%;
+  color: white;
+}
